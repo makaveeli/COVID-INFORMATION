@@ -7,10 +7,10 @@
 
 # FOLDER BACKUP
 
-/api/BACKUPAPI
+/api
 # /api/venv
-/src/BACKUPJS
-
+/src
+/public
 # testing
 /coverage
 
@@ -18,6 +18,9 @@
 /build
 
 # misc
+.eslintcache
+.package-lock.json
+.package.json
 .DS_Store
 .env.local
 .env.development.local
