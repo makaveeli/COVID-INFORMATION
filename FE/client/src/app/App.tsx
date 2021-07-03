@@ -1,24 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="h-screen bg-gray-900 flex flex-col justify-center items-center">
+        <img src="https://cdn1-production-images-kly.akamaized.net/LHelJHER0h5PfaguFhXAUl1zbRs=/640x640/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/1925846/original/091185800_1519304964-fzdfvgdzxf.jpg" alt="" 
+        className="w-60 h-60"
+        />
+        <p className="font-bold text-xl text-white">Simpanse Developer</p>
+      </div>
     </div>
   );
 }
