@@ -8,7 +8,7 @@
 # FOLDER BACKUP
 
 /api/BACKUPAPI
-/api/venv
+# /api/venv
 /src/BACKUPJS
 
 # testing
