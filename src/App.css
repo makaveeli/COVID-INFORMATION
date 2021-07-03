@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+.div-roles{
+  width: 80%;
+  margin-top: 7%;
+  margin-left: 10%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fieldControlx{
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.noah{
+  height: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.column-usage-dashboards {
+  /* float: left;/ */
+  width: 70%;
+  height: 90%;
+  /* margin: 0.5%; */
+  /* background-color: aqua; */
 }
 
-.App-link {
-  color: #61dafb;
+.nobi{
+  position: '-webkit-sticky';
+  position: 'sticky';
+  background: '#fff';
+  left: 0;
+  /* zIndex: 1; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rdt_TableHead {
+  /* color: rgb(235, 235, 235); */
+  background: rgb(235, 235, 228);
+  font-weight: bold ;
+}
+
+.ah{
+  /* float: right; */
+  /* right: 0;
+  mar */
+  /* margin: 300px; */
+  float: right;
+}
+
+.for{
+  width: 100%;
+}
+
+.kntl {
+  width: 240px;
+  position: relative;
+}
+
+.kntl .dday{
+  margin-left: 15%;
+  position: relative;
+  background-color: rgb(240, 42, 42);
+}
+
+.oppo{
+  width: 55%;
+  /* height: 400px; */
+  float: right;
+  margin-left: 4%;
+  position: relative;
+}
+
+.fortex{
+  width: 20px;
+  display: inline;
+}
+
+.gilbi{
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+.hoi{
+  width: 100%;
+}
+
+.nah{
+  width: 500px;
+  margin-left: 10%;
+  border: black;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.label-select{
+  width: 100%;
+  margin-top: 5%;
 }
