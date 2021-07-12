@@ -1,6 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 function App() {
+  useEffect(() => {
+    const fetchData = async () => {
+      const result = await axios(
+        'http://localhost:5000/covidDatas',
+      );
+      console.log(result)
+  
+      // setData(result.data);
+    };
+  
+    fetchData();
+  }, []);
+  
   return (
     <div className="App">
       <div className="h-screen bg-gray-900 flex flex-col justify-center items-center">
