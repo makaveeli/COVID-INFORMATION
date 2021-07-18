@@ -1,0 +1,59 @@
+.nation{
+  width: 100%;
+  position: relative;
+}
+.bg-icon{
+  background-image: url('./../images/bg.png');
+  /* background-size: cover; */
+  background-color: rgb(1, 10, 19);
+  background-repeat: no-repeat;
+  background-size: 100% 300px;
+  width: 100%;
+  height: 350px;
+  display: flex;
+}
+
+.ykgk{
+  width: 100%;
+  height: 140%;
+}
+.bg-icon span{
+  align-self: flex-end;
+  color: rgba(255, 255, 255, 0.829);
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  margin-left: 12px;
+  padding: 5px;
+  /* float: right; */
+}
+
+.bg-icon .th{
+  align-self: flex-end;
+  color: rgba(248, 209, 33, 0.829);
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: 10px;
+  padding: 5px;
+  /* float: right; */
+}
+
+.total{
+  font-size: 40pt;
+  float: left;
+  
+}

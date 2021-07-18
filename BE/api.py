@@ -22,15 +22,26 @@ def index() -> Response:
       positifCases = []
       recvoerCses = []
       Provinsi = []
+      totalDeath = 0
+      totalPositif = 0
+      totalRecover = 0
       for i in features:
         # print(i['attributes'])
 
-        deathCases.append(i['attributes']['Kasus_Meni'])
-        positifCases.append(i['attributes']['Kasus_Posi'])
-        recvoerCses.append(i['attributes']['Kasus_Semb'])
-        Provinsi.append(i['attributes']['Provinsi'])
+        # sum data 
+        totalDeath += i['attributes']['Kasus_Meni']
+        totalPositif += i['attributes']['Kasus_Posi']
+        totalRecover += i['attributes']['Kasus_Semb']
+        # end
+        if i['attributes']['Provinsi'] != 'Indonesia':
+          Provinsi.append(i['attributes']['Provinsi'])
 
-      return make_response(jsonify({'provinsi' : Provinsi, 'deathCases' : deathCases, 'positifCases' : positifCases, 'recoverCases' : recvoerCses}), 200)
+          deathCases.append(i['attributes']['Kasus_Meni'])
+          positifCases.append(i['attributes']['Kasus_Posi'])
+          recvoerCses.append(i['attributes']['Kasus_Semb'])
+        
+
+      return make_response(jsonify({'provinsi' : Provinsi, 'deathCases' : deathCases, 'positifCases' : positifCases, 'recoverCases' : recvoerCses, 'totalDeath' : totalDeath, 'totalPositif': totalPositif, 'totalRecover' : totalRecover}), 200)
      
     except:
       return False
