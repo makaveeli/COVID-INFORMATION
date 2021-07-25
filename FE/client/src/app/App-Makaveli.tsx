@@ -1,5 +1,5 @@
 import React from 'react';
-import { HorizontalBar, Doughnut, Pie } from 'react-chartjs-2';
+import { HorizontalBar, Doughnut } from 'react-chartjs-2';
 import './../assets/css/customstyles.css'
 import axios from 'axios';
 import { withStyles } from '@material-ui/core/styles';

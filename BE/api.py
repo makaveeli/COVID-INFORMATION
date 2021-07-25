@@ -17,7 +17,8 @@ def index() -> Response:
       data =  json.loads(response.text)
 
       features = data['features'] #data yang kita ambil dari json di atas hanya dari array features
-
+      # return make_response(jsonify(data), 200)
+      
       deathCases = []
       positifCases = []
       recvoerCses = []
@@ -41,7 +42,7 @@ def index() -> Response:
           recvoerCses.append(i['attributes']['Kasus_Semb'])
         
 
-      return make_response(jsonify({'provinsi' : Provinsi, 'deathCases' : deathCases, 'positifCases' : positifCases, 'recoverCases' : recvoerCses, 'totalDeath' : totalDeath, 'totalPositif': totalPositif, 'totalRecover' : totalRecover}), 200)
+      return make_response(jsonify({'provinsi' : Provinsi, 'deathCases' : deathCases, 'positifCases' : positifCases, 'recoverCases' : recvoerCses, 'totalDeath' : totalDeath, 'totalPositif': totalPositif, 'totalRecover' : totalRecover, 'features': features}), 200)
      
     except:
       return False
